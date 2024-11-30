@@ -16,4 +16,6 @@ WORKDIR /usr/src/app
 
 COPY --from=build /usr/src/app /usr/src/app
 
+EXPOSE 8080
+
 CMD ["npm", "start"]
